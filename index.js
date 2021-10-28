@@ -17,7 +17,7 @@ function initBoard() {
 function positionClicked(event) {
 
     const square = event.target;
-    const board = document.querySelector('main');
+    const board = document.getElementById('board');
     const player = currentPlayer(); // make a call to see who is the current player
     const messageDisplay = document.getElementById('message-display');
 
