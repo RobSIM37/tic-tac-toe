@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main id="board">
+        <section class="row">
+            <button class="position top left diagonal-one"></button>
+            <div class="vertical"></div>
+            <button class="position top center"></button>
+            <div class="vertical"></div>
+            <button class="position top right diagonal-two"></button>
+        </section>
+        <div class="horizontal"></div>
+        <section class="row">
+            <button class="position middle left"></button>
+            <div class="vertical"></div>
+            <button class="position middle center diagonal-one diagonal-two"></button>
+            <div class="vertical"></div>
+            <button class="position middle right"></button>
+        </section>
+        <div class="horizontal"></div>
+        <section class="row">
+            <button class="position bottom left diagonal-two"></button>
+            <div class="vertical"></div>
+            <button class="position bottom center"></button>
+            <div class="vertical"></div>
+            <button class="position bottom right diagonal-one"></button>
+        </section>
+        <section id="message-display"></section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

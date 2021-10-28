@@ -1,0 +1,41 @@
+main {
+    margin: 20px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+div {
+    background-color: black;
+}
+
+div.horizontal {
+    height: 5px;
+    width: 610px;
+}
+
+div.vertical {
+    height: 200px;
+    width: 5px;
+}
+
+.position {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150px;
+    cursor: pointer;
+}
+
+#message-display {
+    width: 610px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
