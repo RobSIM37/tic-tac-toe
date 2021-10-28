@@ -83,7 +83,7 @@ function checkForWin(classes, player) {
         messageDisplay.textContent = `It's a DRAW!`; //...fill in the message board...
         board.classList.add('game-over'); // ...and set the board state to a 'game-over'
     } else {
-        messageDisplay.textContent = `${currentPlayer().toUpperCase()}s Turn` // Swap the turn message
+        messageDisplay.textContent = `${currentPlayer().toUpperCase()}s Turn` // swap the turn message
     }
 }
 
@@ -91,7 +91,7 @@ function checkGroup(className, player) {
 
     // checks to see if all the elements in a win class (top row, for example) match the player value
     const checkElements = document.getElementsByClassName(className);
-    return Array.from(checkElements).reduce((valid, element) => element.innerText === player ? valid && true : false, true)
+    return Array.from(checkElements).reduce((valid, element) => element.innerText === player ? valid : false, true)
 
 }
 
